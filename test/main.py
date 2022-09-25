@@ -7,6 +7,7 @@ import uvicorn
 from PIL import Image
 from io import BytesIO
 import numpy as np
+import cv2
 
 # import multipart
 
@@ -21,26 +22,27 @@ async def home(request: Request):
     }
     return templates.TemplateResponse("index.html", {"request": request, "data": data})
 
-def rfai(data) -> np.ndarray:
+def to_arr(data) -> np.ndarray:
     imgg = np.array(Image.open(BytesIO(data)))
     return imgg
 
 @app.post("/action")
 async def u_name(uname : UploadFile = File(...)):
 
-    # image = Image.open(uname.file)
-
-    # asdasd111 = await uname.read()
+    print("hello")
+    imh = to_arr(await uname.read())
+    # print(type(BytesIO(await uname.read())))
     
-    # image11 = Image.open(BytesIO(uname))
-
-    qop = Image.open(uname)
-    print(qop)
-    print(uname.content_type)
+    fixed_imh = cv2.cvtColor(imh, cv2.COLOR_BGR2RGB)
+    cv2.imshow("yy",fixed_imh)
+    
+    # waits for user to press any key
+    # (this is necessary to avoid Python kernel form crashing)
+    cv2.waitKey(0)
+    return
     # response1 = RedirectResponse(url='/min')
     # return asd, image11
 
-    return {"message": f"Successfully uploaded {file.filename}"}
 
 @app.post('/min', response_class=HTMLResponse)
 def home111(request: Request):
