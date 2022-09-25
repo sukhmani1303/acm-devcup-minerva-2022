@@ -40,6 +40,7 @@ async def u_name(uname : UploadFile = File(...)):
     # response1 = RedirectResponse(url='/min')
     # return asd, image11
 
+    return {"message": f"Successfully uploaded {file.filename}"}
 
 @app.post('/min', response_class=HTMLResponse)
 def home111(request: Request):
