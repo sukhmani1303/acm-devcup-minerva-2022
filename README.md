@@ -1,4 +1,4 @@
 # acm-devcup-minerva-2022
-TEAM : MINERVA
-NUMBER : 53
-TOPIC : HealthCare
+- TEAM : MINERVA <br>
+- NUMBER : 53 <br>
+- TOPIC : HealthCare <br>
