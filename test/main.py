@@ -1,3 +1,4 @@
+
 #Importing the libraries
 from copyreg import pickle
 from webbrowser import get
@@ -38,11 +39,13 @@ async def u_name(uname : UploadFile = File(...)):
     imh1 = np.array(imh1)/255
 
     # imh_new =np.expand_dims(imh, 2)
-    imh2 = cv2.resize(imh1, (150, 150))
+    imh2 = cv2.resize(imh1, (180, 180))
     # print("dims")
     # print(imh2.shape)
-    imh_new =np.expand_dims(imh2, 2)
+    imh_new = np.repeat(imh2[..., np.newaxis], 3, -1)
+    # imh_new =np.expand_dims(imh2, 2)
     imh_new =np.expand_dims(imh_new, 0)
+    # imh_new = np.repeat(imh_new[..., np.newaxis], 3, -1)
     # print("dims2")
     # print(imh_new.shape)
     # imh = cv2.cvtColor(imh, cv2.COLOR_BGR2GRAY)
@@ -59,15 +62,21 @@ async def u_name(uname : UploadFile = File(...)):
     # predict_x = model.predict(imh_new)
     # classes_x = np.argmax(predict_x,axis=1) 
 
-    m2 = keras.models.load_model('D:\devcup-acm-2022\cnn_model.h5')
+    m2 = keras.models.load_model('inception.h5')
     yp_test = m2.predict(imh_new)
+    result = ""
     # yp_test = yp_test.reshape(1,-1)[0]
-    yp_test = np.argmax(yp_test, axis = 1)
+    if yp_test > 0.5:
+        result = "Pneumonia Positive"
+    else:
+        result = "Pneumonia Negative"
+        
+    # yp_test = np.argmax(yp_test, axis = 1)
 
     # score_main = score_ff.reshape(1,-1)[0]
     
     print(yp_test)
-    return
+    return result
 
     # response1 = RedirectResponse(url='/min')
     # return asd, image11
