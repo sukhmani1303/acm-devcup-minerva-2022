@@ -1,0 +1,333 @@
+
+/* Color Theme Swatches in RGBA */
+.stethoscope-shaping--heart-and--clipboard-on--medical-uniform,-closeup-1-rgba { color: rgba(1, 39, 89, 1); }
+.stethoscope-shaping--heart-and--clipboard-on--medical-uniform,-closeup-2-rgba { color: rgba(12, 67, 140, 1); }
+.stethoscope-shaping--heart-and--clipboard-on--medical-uniform,-closeup-3-rgba { color: rgba(4, 216, 216, 1); }
+.stethoscope-shaping--heart-and--clipboard-on--medical-uniform,-closeup-4-rgba { color: rgba(2, 140, 140, 1); }
+.stethoscope-shaping--heart-and--clipboard-on--medical-uniform,-closeup-5-rgba { color: rgba(4, 216, 195, 1); }
+
+body{
+	background-image: linear-gradient(to top left, rgb(0, 110, 110) ,rgb(0, 244, 219));
+	background-size: cover;
+ 	background-repeat: no-repeat;
+}	
+.login-block {
+
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+}
+
+#carouselExampleIndicators{
+    height:100%;
+}
+
+.d-block{
+    /* margin-top: 5px; */
+    border :1px solid transparent;
+    border-radius: 15px;
+}
+
+.banner-sec {
+	background-size: cover;
+	min-height: 500px;
+	border-radius: 0 10px 10px 0;
+	padding: 0;
+    max-height: 70vh;
+}
+
+.container {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item>img{
+    object-fit: cover;
+    height: 100%;
+
+}
+
+.carousel-inner {
+	border-radius: 0 10px 10px 0;
+}
+
+ 
+.login-sec {
+	padding: 50px 30px;
+	position: relative;
+}
+
+.login-sec .brandname{
+    color: rgb(255, 145, 0);
+    height: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-underline-offset: 15px;
+    text-decoration: underline;
+}
+
+/* input[type=file] {
+    display: none;
+  }
+  
+label {
+
+    border: 1px solid transparent;
+    text-align: center;
+    color: #FFF;
+    border-radius: 7px;
+    width: 120px;
+    padding: 7px;
+    display: block;
+    background-color: #0095ff;
+} */
+
+.login-sec .upload-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+    transition: 180ms;
+    margin:auto;
+    margin-top: 50px;
+    height: 250px;
+    width: 350px;
+    /* background-color: rgb(228, 228, 228); */
+    /* border: 1px solid transparent;
+    border-radius: 7px; */
+}
+
+/* .login-sec .upload-box:hover{
+    background-color: rgb(216, 216, 216);
+    border-radius: 15px;
+    transition: 250ms;
+} */
+
+/* .login-sec .upload-box:hover label{
+    background-color: #0059ff;
+
+} */
+
+.login-sec .copy-text {
+	position: absolute;
+	width: 80%;
+	bottom: 20px;
+	font-size: 13px;
+	text-align: center;
+}
+
+.login-sec .copy-text i {
+	color: #FEB58A;
+}
+
+.login-sec .copy-text a {
+	color: #E36262;
+}
+
+.login-sec h2 {
+	margin-bottom: 30px;
+	font-weight: 800;
+	font-size: 30px;
+	color: #DE6262;
+}
+
+.login-sec h2:after {
+	content: " ";
+	width: 100px;
+	height: 5px;
+	background: #FEB58A;
+	display: block;
+	margin-top: 20px;
+	border-radius: 3px;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.btn-login {
+	background: #DE6262;
+	color: #fff;
+	font-weight: 600;
+}
+
+.banner-text {
+	width: 70%;
+	position: absolute;
+	bottom: 40px;
+	padding-left: 20px;
+}
+
+.banner-text h2 {
+	color: #fff;
+	font-weight: 600;
+}
+
+.banner-text h2:after {
+	content: " ";
+	width: 100px;
+	height: 5px;
+	background: #FFF;
+	display: block;
+	margin-top: 20px;
+	border-radius: 3px;
+}
+
+.banner-text p {
+	color: #fff;
+}
+
+
+.file-upload {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #ffffff;
+	width: 600px;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+  
+  .file-upload-btn {
+	width: 100%;
+	margin:0;
+	color: #fff;
+	background: #0D448C;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	border-bottom: 4px solid #022859;
+	transition: all .2s ease;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+  }
+  
+  .file-upload-btn:hover {
+	background: #1052a7;
+	color: #ffffff;
+	transition: all .2s ease;
+	cursor: pointer;
+  }
+
+  .file-upload-btn11 {
+	width: 140px;
+	margin-left: 85px;
+	margin-top:25px;
+	color: #fff;
+	background: #ff9100;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	border-bottom: 4px solid #d86100;
+	transition: all .2s ease;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+  }
+  
+  .file-upload-btn11:hover {
+	/* background: #1052a7; */
+	background: #ffaa00;
+	color: #ffffff;
+	transition: all .2s ease;
+	cursor: pointer;
+  }
+  
+  .file-upload-btn:active {
+	border: 0;
+	transition: all .2s ease;
+  }
+  
+  .file-upload-content {
+	display: none;
+	text-align: center;
+  }
+  
+  .file-upload-input {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+	cursor: pointer;
+  }
+  
+  .image-upload-wrap {
+	transition: 180ms;
+	margin-top: 20px;
+	position: relative;
+	/* background-color: #038C8C; */
+    border: 4px dotted #022859;
+    border-radius: 7px;
+	width: 100%;
+  }
+.file-upload
+  .image-dropping,
+  .image-upload-wrap:hover {
+	transition: 180ms;
+	background-color: rgba(13, 68, 140, 0.15);
+	border-radius: 15px;
+
+  }
+
+
+.file-upload form{
+	width: 100%;
+
+}
+  .image-title-wrap {
+	padding: 0 15px 15px 15px;
+	color: #222;
+  }
+  
+  .drag-text {
+	text-align: center;
+  }
+  
+  .drag-text h3 {
+	font-weight: 100;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: #015454;
+	padding: 60px 0;
+  }
+  
+  .file-upload-image {
+	max-height: 200px;
+	max-width: 200px;
+	margin: auto;
+	padding: 20px;
+  }
+  
+  .remove-image {
+	width: 200px;
+	margin: 0;
+	color: #fff;
+	background: #cd4535;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	border-bottom: 4px solid #b02818;
+	transition: all .2s ease;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+  }
+  
+  .remove-image:hover {
+	background: #c13b2a;
+	color: #ffffff;
+	transition: all .2s ease;
+	cursor: pointer;
+  }
+  
+  .remove-image:active {
+	border: 0;
+	transition: all .2s ease;
+  }
