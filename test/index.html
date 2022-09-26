@@ -1,16 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-</head>
-<body>
-    <form action="/action" method="post" enctype = "multipart/form-data" >
-        <input type="file" name="uname" accept="image/*" required>
-        <button type="submit">submit</button>
-    </form>
+<html>
 
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content=""width=device-width, initial-scale=1.0">
+    <title>Prototype - 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+</head>
+<style>
+  .caralign
+  {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    right: 10%;
+  }
+
+  .headalign
+  {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,0%);
+    
+  }
+  .subalign1
+  {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 20%
+  }
+  .subalign2
+  {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 20%
+  }
+  body
+  {background-image: url('data:image/jpeg;base64,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'); 
+  background-repeat: no-repeat; background-attachment: fixed;background-size: cover;}
+</style>
+<body>
+  
+
+  
+  <nav class="navbar" style="background-color:#e08311dd;">
+    <div class="container-fluid">
+      <a class="navbar-brand headalign fw-bold fs-1 fst-italic " href="">Pneumonia Detection</a>
+    </div>
+  </nav>
+    <input class="btn subalign2 btn-primary" style="--bs-btn-padding-y: 1rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.3rem;" type="submit"  value="Submit">
+    <input class="btn subalign1 btn-primary" style="--bs-btn-padding-y: 1rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1.3rem;" type="submit"  value="Upload">
+  </div>
+ 
+<div class="col-4 caralign">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://newsonair.gov.in/writereaddata/News_Pictures/NAT/2022/Jun/NPIC-2022611144542.jpg" class="d-grid w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://static.toiimg.com/photo/88221879.cms" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://newsonair.gov.in/writereaddata/News_Pictures/NAT/2022/Jun/NPIC-2022611144542.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
+
 </html>
