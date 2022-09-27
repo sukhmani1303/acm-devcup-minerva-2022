@@ -22,7 +22,14 @@
       <div class ="brandname">Pneumonia Detection</div>
 
       <div class = "upload-box">
-
+        <!-- <div id = "uploader">
+          <form action = "/action" method ="post" enctype="multipart/form-data">
+            <label>
+              Upload
+              <input type="file" name="uname" accept="image/*" required />
+            </label>
+            </form>
+        </div> -->
         <script>
             function readURL(input) {
             if (input.files && input.files[0]) {
@@ -97,13 +104,13 @@
               </div>
               <div class="carousel-inner h-100">
                 <div class="carousel-item active h-100">
-                  <img src="https://static.pexels.com/photos/33972/pexels-photo.jpg" class="d-block w-100 " alt="...">
+                  <img src="{{ url_for('static', path='/img1.png') }}" class="d-block w-100 " alt="...">
                 </div>
                 <div class="carousel-item h-100">
-                  <img src="https://images.pexels.com/photos/13495232/pexels-photo-13495232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100 " alt="...">
+                  <img src="{{ url_for('static', path='/img2.png') }}" class="d-block w-100 " alt="...">
                 </div>
                 <div class="carousel-item h-100">
-                  <img src="https://static.pexels.com/photos/33972/pexels-photo.jpg" class="d-block w-100 " alt="...">
+                  <img src="{{ url_for('static', path='/img3.png') }}" class="d-block w-100 " alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
