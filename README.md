@@ -30,4 +30,4 @@ Open browser and type
 http://127.0.0.1:8000/
 ```
 
-##Upload X-ray Image file and click Submit to predict result
+## Upload X-ray Image file and click Submit to predict result
