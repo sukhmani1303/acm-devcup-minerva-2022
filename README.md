@@ -4,3 +4,5 @@
 - TOPIC : HealthCare <br>
 
 h5 file of our inception model : https://drive.google.com/file/d/1vuOr3weF3rqzZ3mtwRcd8HEz0_APN8iB/view?usp=sharing
+
+- the final build is in [this directory](https://github.com/sukhmani1303/acm-devcup-minerva-2022/tree/main/final-build)
