@@ -1,0 +1,127 @@
+.full_data{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.navbar-nav .nav-item:hover {
+	background-color: rgba(180, 190, 203, 0.4);
+  }
+  
+  .form-control-dark {
+	border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+	border-color: #fff;
+	box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+  .text-small {
+	font-size: 85%;
+  }
+  
+  .dropdown-toggle {
+	outline: 0;
+  }
+
+#main_nav-111{
+	width: 100%;
+	background-color: #022859;
+}
+
+/* .container-fluid{
+	color:#b02818;
+} */
+
+.fs-4{
+	font-family: 'Montserrat';
+	color: #ff9100;
+}
+
+.nav-pills .nav-link.active{
+	background-color: #ff9100 !important;
+	color:#ffffff !important;
+	font-family: 'Inter', sans-serif !important;
+	font-weight: 600 !important;
+}
+
+.nav-pills .nav-link.active:hover{
+	color:#ffffff !important;
+	font-weight: 600 !important;
+}
+
+.nav-pills .nav-link{
+	transition: 120ms !important;
+	color: #ffffff !important;
+	font-family: 'Inter', sans-serif !important;
+	font-weight: 300 !important;
+}
+
+.nav-pills .nav-link:hover{
+	transition: 120ms !important;
+	color: #ff9100 !important;
+}
+
+.text-center{
+	font-family: 'Inter', sans-serif !important;
+	font-weight: 300;
+	color: #ff9100 ;
+}
+
+.nav-item .nav-link{
+	transition: 120ms;
+	font-family: 'Inter', sans-serif !important;
+	font-weight: 300;
+	color: #FFF !important;
+}
+
+.nav-item .nav-link:hover{
+	transition: 120ms;
+	font-family: 'Inter', sans-serif !important;
+	font-weight: 300;
+	color: #ff9100 !important;
+}
+
+.card-header{
+    color: #022859;
+}
+
+.col-sm-6:nth-child(1){
+    margin-bottom: 17px;
+}
+
+.col-sm-6:nth-child(2){
+    margin-bottom: 17px;
+}
+
+.full_data > .card > .card-body{
+    background-color: #c2c2c2;
+}
+
+.btn-primary{
+    transition: 135ms;
+    background-color: #7238c9 !important;
+    border:none !important;
+
+}
+
+.btn-primary:hover{
+    transition: 135ms;
+    background-color: #8139ee !important;
+
+}
+/* ============================================ */
+
+
+.main_head{
+    width :100%;
+    height: 120px;
+    background-color: #ff9100;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFF;
+}
